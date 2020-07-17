@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "995926137326",
+    "firebase_url": "https://teamwork-chat-a0947.firebaseio.com",
+    "project_id": "teamwork-chat-a0947",
+    "storage_bucket": "teamwork-chat-a0947.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995926137326:android:06bca91afb7ff6c91296ff",
+        "android_client_info": {
+          "package_name": "com.example.teamworkchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "995926137326-uhrffiprc8bhhrvgrc9c4t0p8j7dc2ga.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBlLasVtTX0EsdZ5XAzyebrO-fN71qtPDQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "995926137326-uhrffiprc8bhhrvgrc9c4t0p8j7dc2ga.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

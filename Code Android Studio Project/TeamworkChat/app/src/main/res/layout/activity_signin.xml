@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SigninActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textSize="18sp">
+
+            <EditText
+                android:id="@+id/signinActivityEmailEditTextID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:hint="@string/hint_1"
+                android:inputType="textEmailAddress"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                tools:ignore="RtlCompat" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/signinActivityPasswordEditTextID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="20dp"
+                android:hint="@string/hint_2"
+                android:inputType="textPassword"
+                android:password="true"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                tools:ignore="RtlCompat" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/signinActivitySigninButtonID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#938C9E"
+            android:text="@string/sign_in_button"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/signinActivitySignupTextViewID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center_horizontal"
+            android:text="@string/sign_in_text"
+            android:textAlignment="center"
+            android:textColor="#F60334"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/signinActivityForgetPasswordTextViewID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center_horizontal"
+            android:text="@string/forget_password_text"
+            android:textAlignment="center"
+            android:textColor="#F60334"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!--<TextView
+            android:id="@+id/signinActivityResendEmailTextViewID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/resend_verification_email"
+            android:textAlignment="center"
+            android:textColor="#F60334"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>-->
+
+        <ProgressBar
+            android:id="@+id/signinActivityProgressBarID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="40dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>

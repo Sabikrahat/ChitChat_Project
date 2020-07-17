@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menuEditInformationID"
+        android:icon="@drawable/ic_baseline_edit_24"
+        android:title="Edit Information"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menuResetPasswordID"
+        android:title="Reset Password" />
+
+    <item
+        android:id="@+id/menuSignOutFromProfileID"
+        android:title="Sign out" />
+
+</menu>

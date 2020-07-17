@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SignupActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="20">
+
+        <ImageView
+            android:id="@+id/signupActivityImageViewID"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="4"
+            android:src="@drawable/add_image" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:layout_weight="2"
+            android:textAlignment="textStart"
+            android:textSize="18sp">
+
+            <EditText
+                android:id="@+id/signupActivityEmailEditTextID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/hint_1"
+                android:inputType="textEmailAddress"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                tools:ignore="RtlCompat" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:layout_weight="2"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/signupActivityPasswordEditTextID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/hint_2"
+                android:inputType="textPassword"
+                android:password="true"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                tools:ignore="RtlCompat" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:layout_weight="2"
+            android:textAlignment="textStart"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/signupActivityConfirmPasswordEditTextID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/hint_3"
+                android:inputType="textPassword"
+                android:password="true"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                tools:ignore="RtlCompat" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="5"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+                <EditText
+                    android:id="@+id/signupActivityFirstNameEditTextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/hint_5"
+                    android:inputType="textPersonName"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    tools:ignore="RtlCompat" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="5"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                android:textStyle="bold">
+
+                <EditText
+                    android:id="@+id/signupActivityLastNameEditTextID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/hint_6"
+                    android:inputType="textPersonName"
+                    android:textAlignment="textStart"
+                    android:textSize="18sp"
+                    tools:ignore="RtlCompat" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:layout_weight="2"
+            android:textAlignment="textStart"
+            android:textSize="18sp">
+
+            <EditText
+                android:id="@+id/signupActivityPhoneNumberEditTextID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/hint_7"
+                android:inputType="phone"
+                android:textAlignment="textStart"
+                android:textSize="18sp"
+                tools:ignore="RtlCompat" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/signupActivitySignupButtonID"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:layout_weight="2"
+            android:background="#938C9E"
+            android:text="@string/sign_up_button"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/signupActivitySigninTextViewID"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="4dp"
+            android:layout_weight="2"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="@string/sign_up_text"
+            android:textAlignment="center"
+            android:textColor="#F60334"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/signupActivityProgressBarID"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="2"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</LinearLayout>
